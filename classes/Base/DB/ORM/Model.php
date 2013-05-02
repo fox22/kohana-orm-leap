@@ -781,11 +781,14 @@ abstract class Base_DB_ORM_Model extends Core_Object implements Core_IDisposable
 	 * @return string                               the model's class name
 	 */
 	public static function model_name($model) {
+		/*
 		$prefix = 'Model_Leap_';
 		if (preg_match('/^' . $prefix . '.*$/i', $model)) {
 			return $model;
 		}
 		return $prefix . $model;
+		*/
+		return $model;
 	}
 
 	/**
